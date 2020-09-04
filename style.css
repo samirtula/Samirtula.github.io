@@ -24,20 +24,23 @@ a:hover {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding-bottom: 5px;
 }
 .nav-links:hover {
   border-bottom: 2px solid #d1a954;
   color: #ffffff;
   text-decoration: none;
-  padding-bottom: 5px;
 }
 
 #tel {
   text-align: right;
+  height: 30px;
 }
 .production-row {
   padding-top: 30px;
+}
+.navigation {
+  max-width: 824px;
+  height: 30px;
 }
 .production-info {
   margin-top: 190px;
@@ -105,6 +108,7 @@ a:hover {
   height: 1045px;
   background: rgba(51, 51, 51, 0.75);
   align-items: center;
+  z-index: 10;
 }
 .banner__wrapper {
   display: flex;
@@ -257,7 +261,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: start;
-
 }
 .amchair-image {
   background-image: url(images/i8.svg);
@@ -302,29 +305,37 @@ a:hover {
   padding-bottom: 150px;
 }
 .oscar-image {
-  background-image: url(images/i11.png);
+  background-image: url(https://cdn.pixabay.com/photo/2015/05/02/12/18/bolshoi-749878_960_720.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 467px;
-  width: 33%;
+  height: 442px;
+  width: 25%;
 }
 .spb-image {
-  background-image: url(images/i12.png);
+  background-image: url(https://cdn.pixabay.com/photo/2018/09/28/21/10/church-3710237_960_720.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 467px;
-  width: 33%;
+  height: 442px;
+  width: 25%;
   align-items: center;
   justify-content: space-around;
   background-size: cover;
 }
 .gramophone-image {
-  background-image: url(images/i14.png);
+  background-image: url(https://cdn.pixabay.com/photo/2013/02/26/05/36/metz-86226_960_720.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 467px;
-  width: 33%;
+  height: 442px;
+  width: 25%;
+  background-size: cover;
+}
+.icar-image {
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/19/16/31/moscow-3617070_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 442px;
+  width: 25%;
   background-size: cover;
 }
 .search {
@@ -342,7 +353,12 @@ a:hover {
   align-items: center;
 }
 .rating {
-  background-image: url(images/i15.png);
+  background: linear-gradient(
+      0deg,
+      rgba(51, 51, 51, 0.9),
+      rgba(51, 51, 51, 0.9)
+    ),
+    url(https://cdn.pixabay.com/photo/2019/11/23/18/22/bolshoi-4647820_960_720.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -394,6 +410,9 @@ a:hover {
   background-position: center;
   margin-bottom: 80px;
 }
+.charity {
+  margin-bottom: 80px;
+}
 .charity-link,
 .charity-address {
   font-family: Open Sans Condensed;
@@ -404,6 +423,7 @@ a:hover {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 25px;
+  display: block;
   /* white */
 
   color: #ffffff;
@@ -453,30 +473,40 @@ a:hover {
 .copyright {
   display: inline-block;
   font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 150%;
-text-align: right;
-color: #989898;
-margin-bottom: 0;
-  }
-  footer {
-    border: 1px solid #565656;
-height: 78px;
-    }
-    .copy {
-      height: 78px;
-    }
-@media all and (min-width: 576px) and (max-width: 768px) {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: right;
+  color: #989898;
+  margin-bottom: 0;
+}
+footer {
+  border: 1px solid #565656;
+  height: 78px;
+}
+.copy {
+  height: 78px;
+}
+.sponsors {
+  overflow: hidden;
+}
+
+@media all and (max-width: 767px) {
   #tel {
     flex: none;
     max-width: none;
   }
   .production-heading {
-    font-size: 64px;
+    font-size: 63px;
     line-height: 87px;
     letter-spacing: 0.1em;
+  }
+  .production-heading {
+    padding-top: 0;
+  }
+  .production-info {
+    margin-top: 114px;
   }
   .production {
     padding-bottom: 107px;
@@ -489,7 +519,6 @@ height: 78px;
     background-size: contain;
   }
   .form-control {
-
     max-width: 230px;
   }
   .reverse {
@@ -500,7 +529,8 @@ height: 78px;
     padding-top: 100px;
   }
   .formbutton {
-    margin-top: -140px;
+    margin-top: -125px;
+    margin-bottom: 125px;
   }
   .footer-contacts {
     height: 100px;
@@ -518,7 +548,7 @@ height: 78px;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    left: 0;
+    left: 15px;
   }
   .f-16 {
     font-size: 16px;
@@ -529,7 +559,7 @@ height: 78px;
     font-size: 14px;
   }
   .f-64 {
-    font-size: 64px;
+    font-size: 63px;
     line-height: 87px;
     letter-spacing: 0.1em;
   }
@@ -545,19 +575,125 @@ height: 78px;
     display: flex;
     justify-content: space-between;
     width: 66%;
+  }
+  #exampleFormControlTextarea1 {
+    width: 100% !important;
+    max-width: 530px;
+  }
+  .form-control {
+    max-width: none;
+  }
+  .personal-data {
+    padding-left: 0;
+    max-width: 435px;
+    margin: 0 auto;
+  }
 }
-#exampleFormControlTextarea1 {
-width: 100% !important;
-max-width: 509px;
-}
-.form-control {
-  max-width: none;
-}
-.personal-data {
-  padding-left: 0;
-  max-width: 435px;
-  margin: 0 auto;
-}
-}
-@media all and (min-width: 576px) and (max-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
   #tel {
+    flex: none;
+    max-width: none;
+  }
+  #tel::before {
+    content: " ";
+    display: inline-block;
+    width: 27px;
+    height: 20px;
+    background-image: url(images/burger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+  }
+  .feedback {
+    padding-bottom: 40px;
+  }
+  .production-heading {
+    padding-top: 0;
+  }
+  .production-info {
+    margin-top: 170px;
+  }
+  .about-heading {
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+  .production-text {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .poster {
+    max-width: 540px;
+    padding-left: 75px;
+  }
+  .footer-contacts {
+    height: 100px;
+  }
+  .charity-address {
+    align-self: flex-end;
+  }
+  .sponsor {
+    background-position: left;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .navigation {
+    max-width: 692px;
+  }
+  .button {
+    margin-left: 10px;
+  }
+  #tel {
+    margin-top: 50px;
+    position: absolute;
+    left: 360px;
+  }
+  section,footer {
+    padding-left: 200px;
+    padding-right: 11%;
+  }
+  .rating-text {
+    font-size: 34px;
+    line-height: 150%;
+  }
+  .sponsor {
+    background-position: left;
+  }
+  .formbutton {
+    margin-left: auto;
+  }
+}
+@media all and (max-width: 420px) {
+  .footer-contacts {
+    height: auto;
+  }
+  .copy {
+    height: auto;
+  }
+  .production-heading {
+    font-size: 57px;
+    line-height: 66px;
+  }
+  .sponsor {
+    background-position: left;
+  }
+}
+@media all and (max-width: 335px) {
+  .formbutton {
+    margin-top: -155px;
+  }
+  .copyright {
+    text-align: left;
+  }
+  .about-heading {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .staginis {
+    padding-bottom: 30px;
+  }
+  .sponsor {
+    background-position: left;
+  }
+}
