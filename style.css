@@ -10,6 +10,7 @@
 body {
   background: #333333;
 }
+
 a:hover {
   text-decoration: none;
   color: #ffffff;
@@ -110,7 +111,7 @@ a:hover {
   align-items: center;
   z-index: 10;
 }
-.banner__wrapper {
+.banner-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -636,6 +637,13 @@ footer {
   .sponsor {
     background-position: left;
   }
+  .copyright{
+    text-align: left;
+    width: 30%;
+  }
+  .copyright-rights {
+    width: 65%;
+  }
 }
 @media all and (min-width: 992px) and (max-width: 1200px) {
   .navigation {
@@ -649,7 +657,8 @@ footer {
     position: absolute;
     left: 360px;
   }
-  section,footer {
+  section,
+  footer {
     padding-left: 200px;
     padding-right: 11%;
   }
@@ -662,6 +671,12 @@ footer {
   }
   .formbutton {
     margin-left: auto;
+  }
+  .production-info {
+    margin-top: 260px;
+  }
+  .production-heading {
+    padding-top: 0;
   }
 }
 @media all and (max-width: 420px) {
@@ -678,10 +693,18 @@ footer {
   .sponsor {
     background-position: left;
   }
+  .copyright{
+    text-align: left;
+    width: 30%;
+  }
+  .copyright-rights {
+    width: 65%;
+  }
+  
 }
 @media all and (max-width: 335px) {
   .formbutton {
-    margin-top: -155px;
+    margin-top: -160px;
   }
   .copyright {
     text-align: left;
@@ -695,5 +718,21 @@ footer {
   }
   .sponsor {
     background-position: left;
+  }
+  .copyright{
+    text-align: left;
+    width: 30%;
+  }
+  .copyright-rights {
+    width: 65%;
+  }
+}
+.staginis {
+  p
+}
+@media all and (min-width: 1200px) {
+  section,
+  footer {
+    padding-left: 150px;
   }
 }
