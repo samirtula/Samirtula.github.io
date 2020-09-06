@@ -44,7 +44,7 @@ a:hover {
   height: 30px;
 }
 .production-info {
-  margin-top: 190px;
+  margin-top: 170px;
 }
 .production-heading {
   font-family: Open Sans Condensed;
@@ -54,12 +54,13 @@ a:hover {
   line-height: 87px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 0;
 
   /* white */
 
   color: #ffffff;
   padding-top: 130px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .production-text {
   font-family: Open Sans;
@@ -68,6 +69,7 @@ a:hover {
   font-size: 14px;
   line-height: 150%;
   color: #ffffff;
+  margin-bottom: 0;
 }
 .production-poster {
   display: inline-block;
@@ -91,7 +93,7 @@ a:hover {
   color: #ffffff;
 }
 .poster {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .perfomance-image {
   background-image: url(images/i2.png);
@@ -233,6 +235,9 @@ a:hover {
   margin-top: 150px;
   margin-bottom: 100px;
 }
+.about-theatre {
+  margin-top: 130px;
+}
 .theatr-heading {
   font-family: Open Sans Condensed;
   font-style: normal;
@@ -353,7 +358,7 @@ a:hover {
   justify-content: space-around;
   align-items: center;
 }
-.rating {
+.rating-containeer{
   background: linear-gradient(
       0deg,
       rgba(51, 51, 51, 0.9),
@@ -362,6 +367,7 @@ a:hover {
     url(https://cdn.pixabay.com/photo/2019/11/23/18/22/bolshoi-4647820_960_720.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .year {
   font-family: Open Sans Condensed;
@@ -430,7 +436,7 @@ a:hover {
   color: #ffffff;
 }
 .heading-charity {
-  margin-top: 120px;
+  margin-top: 40px;
 }
 .form-control {
   background: #444444;
