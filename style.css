@@ -3,7 +3,7 @@
 .production {
   background-color: #333333;
   background-image: url(images/i1.png);
-  padding-bottom: 208px;
+  padding-bottom: 358px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -358,7 +358,7 @@ a:hover {
   justify-content: space-around;
   align-items: center;
 }
-.rating-containeer{
+.rating-containeer {
   background: linear-gradient(
       0deg,
       rgba(51, 51, 51, 0.9),
@@ -368,6 +368,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 .year {
   font-family: Open Sans Condensed;
@@ -488,8 +489,8 @@ a:hover {
   color: #989898;
   margin-bottom: 0;
 }
-footer {
-  border: 1px solid #565656;
+.footer-container {
+  border-top: 1px solid #565656;
   height: 78px;
 }
 .copy {
@@ -498,9 +499,214 @@ footer {
 .sponsors {
   overflow: hidden;
 }
+.formbutton {
+  width: 190px;
+}
+br {
+  display: none;
+}
+@media all and (min-width: 1200px) {
+  section,
+  footer {
+    padding-left: 150px;
+  }
+}
 
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .production {
+    padding-bottom: 365px;
+  }
+  .button {
+    margin-left: 10px;
+  }
+  #tel {
+    margin-top: 45px;
+  }
+  .nav-tel {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .about-heading {
+    padding-left: 130px;
+    margin-top: 150px;
+  }
+  .staginis {
+    padding-bottom: 170px;
+  }
+
+  section,
+  footer {
+    padding-left: 180px;
+    padding-right: 8%;
+  }
+  .rating-text {
+    font-size: 34px;
+    line-height: 150%;
+  }
+  .rating-containeer {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .rating-containeer-lg {
+    background: linear-gradient(
+        0deg,
+        rgba(51, 51, 51, 0.9),
+        rgba(51, 51, 51, 0.9)
+      ),
+      url(https://cdn.pixabay.com/photo/2019/11/23/18/22/bolshoi-4647820_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .year {
+    margin-bottom: 0rem;
+  }
+  .sponsor {
+    background-position: left;
+  }
+  .formbutton {
+    margin-left: auto;
+  }
+  .production-info {
+    margin-top: 225px;
+  }
+  .production-heading {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
+  .heading-charity {
+    margin-top: 40px;
+  }
+  .footer-contacts {
+    height: 100px;
+  }
+  .charity-address {
+    align-self: flex-end;
+  }
+  .charity {
+    margin-bottom: 55px;
+  }
+  .confidentiality {
+    margin-bottom: 70px;
+  }
+  br {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .heading-charity {
+    margin-top: 10px !important;
+  }
+  #tel {
+    flex: none;
+    max-width: none;
+  }
+  #tel::before {
+    content: " ";
+    display: inline-block;
+    width: 27px;
+    height: 20px;
+    background-image: url(images/burger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+  }
+  .feedback {
+    padding-bottom: 40px;
+  }
+  .production-heading {
+    padding-top: 0;
+    padding-left: 75px;
+  }
+  .production-info {
+    margin-top: 170px;
+  }
+  .about-heading {
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+  .production-text {
+    max-width: 605px;
+    padding-left: 75px;
+  }
+  .poster {
+    max-width: 540px;
+    padding-left: 90px;
+  }
+  .footer-contacts {
+    height: 100px;
+  }
+  .charity-address {
+    align-self: flex-end;
+  }
+  .sponsor {
+    background-position: left;
+  }
+  .copyright {
+    text-align: left;
+    width: 18%;
+  }
+  .copyright-rights {
+    width: 65%;
+  }
+  .rating-containeer {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .rating-containeer-lg {
+    background: linear-gradient(
+        0deg,
+        rgba(51, 51, 51, 0.9),
+        rgba(51, 51, 51, 0.9)
+      ),
+      url(https://cdn.pixabay.com/photo/2019/11/23/18/22/bolshoi-4647820_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .rating-text {
+    font-size: 29px;
+  }
+  .year {
+    margin-bottom: 0rem;
+    padding-right: 15px;
+  }
+  .stars {
+    margin-top: 30px;
+  }
+  .staginis {
+    padding-bottom: 90px;
+  }
+  .feedback {
+    padding-bottom: 10px;
+  }
+  .charity {
+    margin-bottom: 35px;
+  }
+  br {
+    display: none;
+  }
+}
 @media all and (max-width: 767px) {
   #tel {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
     flex: none;
     max-width: none;
   }
@@ -557,20 +763,7 @@ footer {
     position: absolute;
     left: 15px;
   }
-  .f-16 {
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-  }
-  .f-14 {
-    font-size: 14px;
-  }
-  .f-64 {
-    font-size: 63px;
-    line-height: 87px;
-    letter-spacing: 0.1em;
-  }
-  .f-48 {
+  .about-theatre {
     font-size: 48px;
     line-height: 65px;
   }
@@ -583,6 +776,7 @@ footer {
     justify-content: space-between;
     width: 66%;
   }
+
   #exampleFormControlTextarea1 {
     width: 100% !important;
     max-width: 530px;
@@ -595,94 +789,56 @@ footer {
     max-width: 435px;
     margin: 0 auto;
   }
-}
-@media all and (min-width: 768px) and (max-width: 992px) {
-  #tel {
-    flex: none;
-    max-width: none;
-  }
-  #tel::before {
-    content: " ";
-    display: inline-block;
-    width: 27px;
-    height: 20px;
-    background-image: url(images/burger.svg);
-    background-position: center;
+  .rating-containeer {
+    background: none;
     background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
   }
-  .feedback {
-    padding-bottom: 40px;
-  }
-  .production-heading {
-    padding-top: 0;
-  }
-  .production-info {
-    margin-top: 170px;
-  }
-  .about-heading {
-    margin-top: 90px;
-    margin-bottom: 60px;
-  }
-  .production-text {
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .poster {
-    max-width: 540px;
-    padding-left: 75px;
-  }
-  .footer-contacts {
-    height: 100px;
-  }
-  .charity-address {
-    align-self: flex-end;
-  }
-  .sponsor {
-    background-position: left;
-  }
-  .copyright{
-    text-align: left;
-    width: 30%;
-  }
-  .copyright-rights {
-    width: 65%;
-  }
-}
-@media all and (min-width: 992px) and (max-width: 1200px) {
-  .navigation {
-    max-width: 692px;
-  }
-  .button {
-    margin-left: 10px;
-  }
-  #tel {
-    margin-top: 50px;
-    position: absolute;
-    left: 360px;
-  }
-  section,
-  footer {
-    padding-left: 200px;
-    padding-right: 11%;
+  .rating-containeer-lg {
+    background: linear-gradient(
+        0deg,
+        rgba(51, 51, 51, 0.9),
+        rgba(51, 51, 51, 0.9)
+      ),
+      url(https://cdn.pixabay.com/photo/2019/11/23/18/22/bolshoi-4647820_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
   }
   .rating-text {
-    font-size: 34px;
-    line-height: 150%;
+    font-size: 29px;
+  }
+  .year {
+    margin-bottom: 0rem;
+    padding-right: 15px;
+    align-self: start;
   }
   .sponsor {
-    background-position: left;
+    align-self: center;
   }
-  .formbutton {
-    margin-left: auto;
+  .stars {
+    margin-top: 30px;
   }
-  .production-info {
-    margin-top: 260px;
+  .staginis {
+    padding-bottom: 90px;
   }
-  .production-heading {
-    padding-top: 0;
+  .feedback {
+    padding-bottom: 10px;
+  }
+  .charity {
+    margin-bottom: 35px;
+  }
+  .heading-charity {
+    margin-top: 10px !important;
+  }
+  .copyright {
+    text-align: left;
+  }
+  br {
+    display: inline-block;
   }
 }
 @media all and (max-width: 420px) {
@@ -699,21 +855,71 @@ footer {
   .sponsor {
     background-position: left;
   }
-  .copyright{
+  .copyright {
     text-align: left;
     width: 30%;
   }
   .copyright-rights {
     width: 65%;
   }
-  
+  .copyright-rights {
+    width: 65%;
+  }
+  .rating-containeer {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .rating-containeer-lg {
+    background: linear-gradient(
+        0deg,
+        rgba(51, 51, 51, 0.9),
+        rgba(51, 51, 51, 0.9)
+      ),
+      url(https://cdn.pixabay.com/photo/2019/11/23/18/22/bolshoi-4647820_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .rating-text {
+    font-size: 29px;
+  }
+  .year {
+    margin-bottom: 0rem;
+    padding-right: 15px;
+    align-self: start;
+  }
+  .sponsor {
+    align-self: center;
+  }
+  .stars {
+    margin-top: 30px;
+  }
+  .staginis {
+    padding-bottom: 90px;
+  }
+  .feedback {
+    padding-bottom: 10px;
+  }
+  .charity {
+    margin-bottom: 35px;
+  }
+  .heading-charity {
+    margin-top: 10px !important;
+  }
+  .spb-image {
+    height: 300px;
+  }
+  br {
+    display: inline-block;
+  }
 }
 @media all and (max-width: 335px) {
   .formbutton {
     margin-top: -160px;
-  }
-  .copyright {
-    text-align: left;
   }
   .about-heading {
     margin-top: 50px;
@@ -725,20 +931,62 @@ footer {
   .sponsor {
     background-position: left;
   }
-  .copyright{
+  .copyright {
     text-align: left;
     width: 30%;
   }
   .copyright-rights {
     width: 65%;
   }
-}
-.staginis {
-  p
-}
-@media all and (min-width: 1200px) {
-  section,
-  footer {
-    padding-left: 150px;
+  .spb-image {
+    height: 215px;
+  }
+  .rating-containeer {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .rating-containeer-lg {
+    background: linear-gradient(
+        0deg,
+        rgba(51, 51, 51, 0.9),
+        rgba(51, 51, 51, 0.9)
+      ),
+      url(https://cdn.pixabay.com/photo/2019/11/23/18/22/bolshoi-4647820_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .rating-text {
+    font-size: 29px;
+  }
+  .year {
+    margin-bottom: 0rem;
+    padding-right: 15px;
+    align-self: start;
+  }
+  .sponsor {
+    align-self: center;
+  }
+  .stars {
+    margin-top: 30px;
+  }
+  .staginis {
+    padding-bottom: 90px;
+  }
+  .feedback {
+    padding-bottom: 10px;
+  }
+  .charity {
+    margin-bottom: 35px;
+  }
+  .heading-charity {
+    margin-top: 10px !important;
+  }
+  br {
+    display: inline-block;
   }
 }
